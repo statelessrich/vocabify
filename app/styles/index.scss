@@ -3,26 +3,25 @@
 // normalize.css
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
-// Montserrat font
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap");
-
+// Lobster font
 @font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap") format("woff2"),
-    url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&display=swap") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: Lobster;
+  src: url("public/fonts/Lobster-Regular.ttf") format("truetype");
+  font-weight: 600;
 }
 
-// Lobster font
-@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-
+// Montserrat regular font
 @font-face {
-  font-family: "Lobster";
-  src: url("https://fonts.googleapis.com/css2?family=Lobster&display=swap") format("woff2"),
-    url("https://fonts.googleapis.com/css2?family=Lobster&display=swap") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: Montserrat;
+  src: url("public/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+// Montserrat bold font
+@font-face {
+  font-family: Montserrat;
+  src: url("public/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 600;
 }
 
 * {

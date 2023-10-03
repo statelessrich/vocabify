@@ -304,6 +304,13 @@ __export(routes_exports, {
   default: () => Index,
   links: () => links
 });
+var import_react7 = require("react");
+
+// app/styles/index.css
+var styles_default = "/build/_assets/index-MCSCH5UA.css";
+
+// app/styles/input.css
+var input_default = "/build/_assets/input-SLJ6PGXN.css";
 
 // app/components/input.js
 var import_react6 = require("react"), import_regenerator_runtime = require("regenerator-runtime"), import_speech_recognition_polyfill = require("@speechly/speech-recognition-polyfill"), import_react_speech_recognition = __toESM(require("react-speech-recognition"));
@@ -597,16 +604,10 @@ function Input() {
     columnNumber: 5
   }, this) : null;
 }
-var input_default = Input;
-
-// app/styles/index.css
-var styles_default = "/build/_assets/index-DUDNNKNR.css";
-
-// app/styles/input.css
-var input_default2 = "/build/_assets/input-SLJ6PGXN.css";
+var input_default2 = Input;
 
 // app/routes/index.jsx
-var import_react7 = require("react"), import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
+var import_jsx_dev_runtime5 = require("react/jsx-dev-runtime");
 function links() {
   return [
     {
@@ -615,7 +616,7 @@ function links() {
     },
     {
       rel: "stylesheet",
-      href: input_default2
+      href: input_default
     },
     {
       rel: "apple-touch-icon",
@@ -656,7 +657,7 @@ function Index() {
       lineNumber: 55,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "main", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(input_default, {}, void 0, !1, {
+    /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)("div", { className: "main", children: /* @__PURE__ */ (0, import_jsx_dev_runtime5.jsxDEV)(input_default2, {}, void 0, !1, {
       fileName: "app/routes/index.jsx",
       lineNumber: 60,
       columnNumber: 9
@@ -673,7 +674,7 @@ function Index() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "bdbbad8b", entry: { module: "/build/entry.client-HP5ZXVQM.js", imports: ["/build/_shared/chunk-DEMPFQNT.js", "/build/_shared/chunk-FN3KWL4V.js", "/build/_shared/chunk-4IYZMDEG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-DSAQHILR.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-BSQECNGK.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resources/manifest[.]webmanifest": { id: "routes/resources/manifest[.]webmanifest", parentId: "root", path: "resources/manifest.webmanifest", index: void 0, caseSensitive: void 0, module: "/build/routes/resources/manifest[.]webmanifest-B7J2LRZ4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-BDBBAD8B.js" };
+var assets_manifest_default = { version: "63729f1b", entry: { module: "/build/entry.client-OFERGYDB.js", imports: ["/build/_shared/chunk-DEMPFQNT.js", "/build/_shared/chunk-FN3KWL4V.js", "/build/_shared/chunk-4IYZMDEG.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ADOF6U6Z.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-CL3L2QMU.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/resources/manifest[.]webmanifest": { id: "routes/resources/manifest[.]webmanifest", parentId: "root", path: "resources/manifest.webmanifest", index: void 0, caseSensitive: void 0, module: "/build/routes/resources/manifest[.]webmanifest-B7J2LRZ4.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-63729F1B.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public\\build", future = { unstable_cssModules: !1, unstable_cssSideEffectImports: !1, unstable_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, unstable_vanillaExtract: !1, v2_errorBoundary: !1, v2_meta: !1, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

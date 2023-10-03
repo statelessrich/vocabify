@@ -1,7 +1,7 @@
-import Input from "../components/input";
+import { useEffect, useState } from "react";
 import styles from "~/styles/index.css";
 import inputStyles from "~/styles/input.css";
-import { useState, useEffect } from "react";
+import Input from "../components/input";
 
 export function links() {
   return [
