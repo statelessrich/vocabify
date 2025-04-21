@@ -1,49 +1,34 @@
 {
-  "private": true,
-  "sideEffects": false,
-  "scripts": {
-    "build": "run-s build:*",
-    "dev": "run-p dev:*",
-    "typecheck": "tsc",
-    "sass": "sass --watch app/:app/",
-    "build:css": "sass app/:app/ --no-source-map --style compressed",
-    "build:remix": "cross-env NODE_ENV=production remix build",
-    "build:worker": "esbuild ./app/entry.worker.js --outfile=./public/entry.worker.js --minify --bundle --format=esm --define:process.env.NODE_ENV='\"production\"'",
-    "dev:remix": "cross-env NODE_ENV=development concurrently \"npm run sass\" \"remix dev\"",
-    "dev:worker": "esbuild ./app/entry.worker.js --outfile=./public/entry.worker.js --bundle --format=esm --define:process.env.NODE_ENV='\"development\"' --watch"
-  },
-  "dependencies": {
-    "@remix-run/node": "^1.14.3",
-    "@remix-run/react": "^1.14.3",
-    "@remix-run/vercel": "^1.14.3",
-    "@speechly/speech-recognition-polyfill": "^1.3.0",
-    "@vercel/node": "^2.6.2",
-    "dompurify": "^3.0.1",
-    "isbot": "^3.6.5",
-    "openai": "^3.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-speech-recognition": "^3.10.0",
-    "react-spinners": "^0.13.8",
-    "node-persist": "^3.1.0",
-    "web-push": "^3.4.5",
-    "npm-run-all": "^4.1.5",
-    "cross-env": "^7.0.3",
-    "dotenv": "^16.0.3"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^1.14.3",
-    "@remix-run/eslint-config": "^1.14.3",
-    "@remix-run/serve": "^1.14.3",
-    "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.8",
-    "concurrently": "^7.6.0",
-    "eslint": "^8.27.0",
-    "sass": "^1.60.0",
-    "typescript": "^4.8.4",
-    "@types/node-persist": "^3.1.2"
-  },
-  "engines": {
-    "node": ">=14"
-  }
+	"name": "vocabify-next",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"dev": "next dev --turbopack",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint",
+		"biome": "npx @biomejs/biome format --write"
+	},
+	"dependencies": {
+		"@speechly/speech-recognition-polyfill": "^1.3.0",
+		"dompurify": "^3.2.5",
+		"next": "15.3.1",
+		"openai": "^4.95.1",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"react-speech-recognition": "^4.0.0",
+		"react-spinners": "^0.17.0",
+		"regenerator-runtime": "^0.14.1"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@tailwindcss/postcss": "^4",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"sass": "^1.86.3",
+		"tailwindcss": "^4",
+		"typescript": "^5"
+	}
 }

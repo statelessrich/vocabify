@@ -1,0 +1,16 @@
+{
+	"$schema": "https://json.schemastore.org/biome.json",
+	"formatter": {
+		"enabled": true,
+		"ignore": ["node_modules", "build", ".next", ".history"]
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true
+		}
+	},
+	"files": {
+		"ignore": ["node_modules", "build", ".next"]
+	}
+}

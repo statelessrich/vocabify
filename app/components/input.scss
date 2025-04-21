@@ -1,4 +1,5 @@
-@import "variables";
+@use "../variables";
+@use 'sass:color';
 
 .input-component {
   width: 100%;
@@ -31,7 +32,7 @@
         transform: translate(-50%, -50%);
         width: 50%;
         height: 50%;
-        fill: #e6f7ff;
+        fill: variables.$white;
         pointer-events: none;
       }
     }
@@ -41,6 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2rem 0;
 
     .row {
       display: inline-block;
@@ -56,7 +58,7 @@
         font-size: 42px;
         line-height: 1;
         border: none;
-        border-bottom: 2px solid $blue;
+        border-bottom: 2px solid variables.$dark-blue;
         font-family: "Lobster", sans-serif;
 
         &:focus {
@@ -65,7 +67,7 @@
         }
 
         &::placeholder {
-          color: #00517733;
+          color: variables.$lighter-blue;
         }
       }
 
@@ -87,8 +89,8 @@
   button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #0078d48c;
-    color: #e6f7ff;
+    background-color: variables.$light-blue;
+    color: variables.$white;
     border: none;
     border-radius: 10px;
     height: 40px;
@@ -96,20 +98,18 @@
     transition: background-color 0.2s ease;
 
     &.submit-btn {
-      // margin-top: 20px;
-
       &:hover {
         transform: scale(1.03);
       }
     }
 
     &:hover {
-      background-color: darken(#0078d48c, 10%);
+      background-color: color.adjust(variables.$light-blue, $lightness: -10%);
       transition: all 0.2s ease;
     }
 
     &:disabled {
-      background-color: #b5cdd8b4;
+      background-color: variables.$gray;
       cursor: not-allowed;
     }
   }
@@ -124,12 +124,5 @@
 
   .loader {
     margin-top: 40px;
-  }
-
-  // mobile
-  @media screen and (max-width: 650px) {
-    .word-input {
-      // width: 70%;
-    }
   }
 }
