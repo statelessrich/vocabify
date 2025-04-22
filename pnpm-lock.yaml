@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@speechly/speech-recognition-polyfill':
-        specifier: ^1.3.0
-        version: 1.3.0
       dompurify:
         specifier: ^3.2.5
         version: 3.2.5
@@ -366,12 +363,6 @@ packages:
     resolution: {integrity: sha512-dfUnCxiN9H4ap84DvD2ubjw+3vUNpstxa0TneY/Paat8a3R4uQZDLSvWjmznAY/DoahqTHl9V46HF/Zs3F29pg==}
     engines: {node: '>= 10.0.0'}
 
-  '@speechly/browser-client@2.6.6':
-    resolution: {integrity: sha512-yhqLMqaYefrS3ylZtDCB6pTrS8U6+TQzJ90sXBZLRWZSzRTRbBBZK9Rb0PwJmkN/Lo/NK2jB+5Jb5W6g6h+dMA==}
-
-  '@speechly/speech-recognition-polyfill@1.3.0':
-    resolution: {integrity: sha512-klpZhJqAyy8pG8afkoZzXYKR1H0Y5tTEfSRB15pZNfDH1nB0IHmtsAZ32FpGztwRhTgl46po7Hvl/H1WtoXZuA==}
-
   '@swc/counter@0.1.3':
     resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
 
@@ -496,9 +487,6 @@ packages:
 
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
-
-  base-64@0.1.0:
-    resolution: {integrity: sha512-Y5gU45svrR5tI2Vt/X9GPd3L0HNIKzGu202EjxrXMpuc2V2CiKgemAbUUsqYmZJvPtCXoUKjNZwBJzsNScUbXA==}
 
   braces@3.0.3:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
@@ -906,10 +894,6 @@ packages:
   undici-types@6.19.8:
     resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
-  uuid@8.3.2:
-    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
-    hasBin: true
-
   web-streams-polyfill@4.0.0-beta.3:
     resolution: {integrity: sha512-QW95TCTaHmsYfHDybGMwO5IJIM93I/6vTRk+daHTWFPhwh+C8Cg7j7XyKrwrj8Ib6vYXe0ocYNrmzY4xAAN6ug==}
     engines: {node: '>= 14'}
@@ -1129,15 +1113,6 @@ snapshots:
       '@parcel/watcher-win32-x64': 2.5.1
     optional: true
 
-  '@speechly/browser-client@2.6.6':
-    dependencies:
-      base-64: 0.1.0
-      uuid: 8.3.2
-
-  '@speechly/speech-recognition-polyfill@1.3.0':
-    dependencies:
-      '@speechly/browser-client': 2.6.6
-
   '@swc/counter@0.1.3': {}
 
   '@swc/helpers@0.5.15':
@@ -1243,8 +1218,6 @@ snapshots:
       humanize-ms: 1.2.1
 
   asynckit@0.4.0: {}
-
-  base-64@0.1.0: {}
 
   braces@3.0.3:
     dependencies:
@@ -1628,8 +1601,6 @@ snapshots:
   undici-types@5.26.5: {}
 
   undici-types@6.19.8: {}
-
-  uuid@8.3.2: {}
 
   web-streams-polyfill@4.0.0-beta.3: {}
 
