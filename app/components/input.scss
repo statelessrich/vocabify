@@ -48,7 +48,7 @@
       display: inline-block;
 
       .word-input {
-        width: 95%;
+        width: auto;
         max-width: 255px;
         display: inline-block;
         height: 40px;
@@ -75,8 +75,9 @@
         display: inline-block;
         margin-left: -45px;
       }
-    }
-  }
+        
+      
+    } 
 
   .buttons {
     margin-top: 40px;
@@ -125,4 +126,5 @@
   .loader {
     margin-top: 40px;
   }
+}
 }
