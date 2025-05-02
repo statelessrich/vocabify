@@ -1,4 +1,5 @@
 import DOMPurify from "dompurify";
+import parse from "html-react-parser";
 import { useEffect, useRef } from "react";
 
 export default function Response({ query, data }) {
@@ -21,17 +22,11 @@ export default function Response({ query, data }) {
 
 	return (
 		<div className="response" ref={responseRef}>
-			<div
-				dangerouslySetInnerHTML={{
-					__html: DOMPurify.sanitize(boldQuery(query, data.definition)),
-				}}
-			/>
+			<div>{parse(DOMPurify.sanitize(boldQuery(query, data.definition)))}</div>
 			<br />
-			<div
-				dangerouslySetInnerHTML={{
-					__html: `"${DOMPurify.sanitize(boldQuery(query, data.example))}"`,
-				}}
-			/>
+			<div>
+				{parse(`"${DOMPurify.sanitize(boldQuery(query, data.example))}"`)}
+			</div>
 		</div>
 	);
 }
