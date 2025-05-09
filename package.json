@@ -8,7 +8,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"biome": "npx @biomejs/biome format --write"
+		"biome": "npx biome check --write"
 	},
 	"dependencies": {
 		"dompurify": "^3.2.5",
